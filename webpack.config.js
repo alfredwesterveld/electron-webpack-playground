@@ -1,5 +1,5 @@
 module.exports = {
-    entry: "./entry.js",
+    entry: "./entry.ts",
     target: "electron",
     output: {
         path: __dirname,
@@ -7,7 +7,8 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.css$/, loader: "style!css" }
+            { test: /\.css$/, loader: "style!css" },
+            { test: /\.tsx?$/, loader: "ts-loader", exclude: /node_modules/ }
         ]
     }
 };
