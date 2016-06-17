@@ -8,5 +8,8 @@
     "watch": "webpack-dev-server --hot --inline"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^1.13.1"
+  }
 }
